@@ -4,8 +4,39 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1{
-    font-size: 30px;
-    color: red;
+body{
     font-family: Montserrat;
+}
+nav{
+    height: 50px;
+    background-color: #1c2833;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 50px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 5px;
+}
+nav ul li a{
+    padding: 5px 12px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+nav ul li a:hover, .nav-home-btn-active{
+    background-color: #566573;
 }
