@@ -40,13 +40,18 @@ nav ul li a:hover, .nav-home-btn-active{
     background-color: #566573;
 }
 
+#checkbox-for-menu{
+    display: none;
+}
+.thiree-dot-menu{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
 @media only screen and (max-width: 800px){
     .thiree-dot-menu{
-        color: white;
-        font-size: 25px;
-    }
-    #checkbox-for-menu{
-        display: none;
+        display: block;
     }
     #checkbox-for-menu:checked ~ ul{
         left: 0%;
