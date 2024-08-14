@@ -49,6 +49,9 @@ nav ul li a:hover, .nav-home-btn-active{
     cursor: pointer;
     display: none;
 }
+
+/* navigation responsive code start from here  */
+
 @media only screen and (max-width: 800px){
     .thiree-dot-menu{
         display: block;
@@ -81,4 +84,14 @@ nav ul li a:hover, .nav-home-btn-active{
         background: none;
         color: red;
     }
+}
+
+/* hero area start from here  */
+header{
+    background-image: url("images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
 }
