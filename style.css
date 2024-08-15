@@ -98,12 +98,53 @@ header{
     padding: 10px 0;
 }
 
+/* 2nd section, smart area  */
+#second-section{
+    background-color: #354354;
+    padding: 40px 0;
+}
+.smart-parent-container{
+    width: 90%;
+    margin: 10px auto;
+}
+.smart-area-title{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.smart-parent-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.smart-area-text{
+    color: white;
+}
+.smart-area-text h4{
+    padding: 30px 0;
+    text-transform: uppercase;
+    color: #91d538;
+}
+.smart-area-text h2{
+    color: red;
+    padding-bottom: 20px;
+}
+.smart-area-text a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(6, 5, 5);
+    background-color: red;
+    margin: 20px 0;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
 
 
 
-/* navigation responsive code start from here  */
 
 @media only screen and (max-width: 688px){
+
+    /* navigation responsive code  */
     .thiree-dot-menu{
         display: block;
     }
@@ -135,10 +176,7 @@ header{
         background: none;
         color: red;
     }
-}
-
-/* 1st section, service area media query responsive code start  */
-@media only screen and (max-width: 688px){
+    /* 2nd section, service details  */
     .service-details-container{
         width: 90%;
         margin: 20px auto;
@@ -146,8 +184,24 @@ header{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
     }
-    
-}  
+    /* 2nd section, smart area  */
+    .smart-parent-container{
+       display: block;
+       width: 100%;
+    }
+    .smart-area-img img{
+        width: 100%;
+    }
+    .smart-area-text{
+        text-align: center;
+        padding: 20px;
+    }
+    .smart-area-text p{
+        text-align: start;
+
+    }
+}
+ 
 @media only screen and (min-width: 689px) and (max-width: 992px){
     .service-details-container{
         width: 90%;
@@ -156,6 +210,23 @@ header{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
     }
+     /* 2nd section, smart area  */
+     .smart-parent-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+     }
+     .smart-area-img{
+        width: 40%;
+     }
+     .smart-area-img img{
+        width: 100%;
+     }
+     .smart-area-text{
+        width: 60%;
+     }
+     
 }
 @media only screen and (min-width: 993px) and (max-width: 1313px){
     .service-details-container{
@@ -165,4 +236,5 @@ header{
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
     }
-}
+    
+ }
