@@ -6,6 +6,7 @@
 }
 body{
     font-family: Montserrat;
+    cursor: default;
 }
 nav{
     height: 50px;
@@ -69,6 +70,7 @@ header{
 #first-section{
     background-color: rgb(220, 216, 232);
     padding: 40px 0;
+    width: 100%;
 }
 .service-details-container{
     width: 90%;
@@ -100,6 +102,7 @@ header{
 
 /* 2nd section, smart area  */
 #second-section{
+    width: 100%;
     background-color: #354354;
     padding: 40px 0;
 }
@@ -116,6 +119,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 .smart-area-text{
     color: white;
@@ -141,6 +146,7 @@ header{
 
 /* 3nd, section, about text and card */
 #third-section{
+    width: 100%;
     padding: 20px 0;
     background-image: url("images/about-section.jpg");
     background-repeat: no-repeat;
@@ -192,6 +198,112 @@ header{
     padding: 10px 0;
 }
 
+/* fourth section, advise  */
+
+#fourth-section{
+    width: 100%;
+    background-color: #154360;
+    color: white;
+}
+.advise-parent-container{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.advise-img img{
+    width: 100%;
+}
+.advise-single-container h3{
+    color: #56be3e;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.advise-single-container h2{
+    font-size:25px;
+    border-bottom:2px solid #ff008c;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.advise-single-container p{
+    text-align: justify;
+    line-height: 1.5;
+}
+.advise-single-container a{
+    background-color: white;
+    color: black;
+    display: inline-block;
+    margin: 20px 5px;
+    padding: 8px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.advise-social{
+    text-align: center; 
+    
+}
+.advise-social a{
+    border: 1px solid black;
+}
+
+/* 5th section, contact us  */
+#fiveth-section{
+    background-image: linear-gradient(#0000002f, #0000001a), url('images/contact.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 20px 0;
+}
+form{
+    width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-color: #a7ceca;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+form h2{
+    font-size: 30px;
+    padding: 15px;
+}
+.cnt-fm-input{
+   display: block;
+   width: 100%;
+   margin: 20px 0;
+   padding: 10px;
+   border: none;
+   border-bottom: 3px solid black;
+   outline: none;
+   background: none;
+}
+.cnt-fm-input::placeholder{
+    color: rgb(83, 87, 37);
+}
+.submit-btn{
+    display: block;
+    margin-top: 30px ;
+    margin: auto;
+    background-color: #56be3e;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
 
 
 
@@ -231,18 +343,43 @@ header{
         background: none;
         color: red;
     }
-    /* 2nd section, service details  */
+    /* 1st section, service details  */
     .service-details-container{
-        width: 90%;
-        margin: 20px auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 20px;
+        margin: 10px auto;
+        display: block;
+        
     }
+    .service-details-single-container{
+        padding: 5px;
+        border: 1px solid black;
+        margin: 10px 0; 
+    }
+    .service-details-single-container:hover{
+        transform: scale(1);
+        box-shadow: none;
+    }
+    .service-details-single-container i{
+        font-size: 30px;
+        padding-top: 8px;
+    }
+    .service-details-single-container h2{
+        padding: 8px 0;
+        font-size: 17px;
+    }
+    .service-details-single-container p{
+        font-size: 12px;
+    }
+
     /* 2nd section, smart area  */
+
+    #second-section{
+        padding: 20px 0;
+    }
+    .smart-area-title{
+        font-size: 20px;
+    }
     .smart-parent-container{
        display: block;
-       width: 100%;
     }
     .smart-area-img img{
         width: 100%;
@@ -251,37 +388,129 @@ header{
         text-align: center;
         padding: 20px;
     }
+    .smart-area-text h2{
+        padding-bottom: 10px;
+        font-size: 19px;
+    }
+    .smart-area-text h4{
+        padding: 10px 0;
+        font-size: 14px;
+    }
     .smart-area-text p{
         text-align: start;
-
+        font-size: 12px;
     }
+    .smart-area-text a{
+        margin: 15px 0 0 0;
+        padding: 5px 10px;
+        font-size: 12px;
+        
+    }
+
+
      /* 3nd, section, about text and card */
+     #third-section{
+        padding: 10px 0;
+     }
      .about-container{
-        width: 90%;
         margin: 10px auto;
         display: block;
-        color: white;
     }
     .about-container-left{
-        margin: 0 20px;
-        width: 100%;
-    }
-    
-    .about-container-right{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 20px;
-        place-content: center;
+        margin: auto;
         width: 90%;
     }
+    .about-container-left p{
+        font-size: 12px;
+    }
+    .about-container-left h3{
+        font-size: 18px;
+    }
+    .about-container-left ul{
+        font-size: 12px;
+    }
+    .about-container-left a{
+        margin: 10px 0;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 12px;
+    }
+    .about-container-right{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
     .single-about-item{
-        box-shadow: 2px 2px 6px #5ace5a;
-        padding: 5px;
-        background-color: rgb(58, 42, 42);
+        box-shadow: none;
+        margin: 5px 0;
+        padding: 5px 0;
         text-align: center;
     }
-   
+    .single-about-item h2{
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .single-about-item p{
+        font-size: 11px;
+    }
+
+    /* 4th section, advise  */
+    .advise-parent-container{
+        padding: 10px 0;
+        display: block;
+    }
+    .advise-single-container h3{
+        padding: 5px 0;
+        font-size: 18px;
+    }
+    .advise-single-container h2{
+        font-size:22px;
+        border-bottom:1px solid #ff008c;
+        margin-bottom: 6px;
+        padding-bottom: 5px;
+    }
+    .advise-single-container p{
+        text-align: start;
+        line-height: 1;
+        font-size: 12px;
+    }
+    .advise-single-container a{
+        margin: 10px 5px;
+        padding: 4px 10px;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+    .advise-social a{
+        padding: 8px 12px;
+        border-radius: 10px;
+    }
+    /* 5th section , contact form  */
+    #fiveth-section{
+        padding: 10px 0;
+    }
+    form{
+        margin: 5px auto;
+        padding: 10px;
+        border: 3px solid black;
+    }
+    form h2{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .cnt-fm-input{
+       display: block;
+       width: 100%;
+       margin: 10px 0;
+       padding: 8px;
+       border-bottom: 2px solid black;
+    }
+    .submit-btn{
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
 }
+
 
 
 
@@ -309,7 +538,16 @@ header{
      .smart-area-text{
         width: 60%;
      }
+     /* 4th section, advise  */
+     .advise-social a{
+        padding: 8px 20px;
+        border-radius: 10px;
+    }
 }
+
+
+
+
 @media only screen and (min-width: 993px) and (max-width: 1313px){
     .service-details-container{
         width: 90%;
