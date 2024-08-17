@@ -337,7 +337,31 @@ form h2{
 .match-single-container:nth-child(2){
     border: 3px solid white;
 }
+/* 7th section, takeCare */
+#seven-section{
+    padding: 20px 0;
+}
+.takeCare-parent{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.takeCare-text p{
+    margin: 10px 0;
+}
+.takeCare-text ul li{
+    list-style-position: inside;
+    margin: 5px 0;
+}
+.takeCare-img{
+    width: 100%;
+}
+.takeCare-img img{
+    width: 100%;
 
+}
 
 
 
@@ -575,8 +599,22 @@ form h2{
         border: 3px solid white;
         border: 2px solid white;
     }
+    /* 7th section, takeCare  */
+    #seven-section{
+        padding: 20px 0;
+    }
+    .takeCare-parent{
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    .takeCare-text{
+        padding-bottom: 10px;
+    }
     
     
+
+
 }
 
 
@@ -621,6 +659,20 @@ form h2{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 15px;
     }
+     /* 7th section, takeCare  */
+     #seven-section{
+        padding: 20px 0;
+    }
+    .takeCare-parent{
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    .takeCare-text{
+        padding-bottom: 10px;
+    }
+    
+    
         
         
 }
