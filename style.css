@@ -298,11 +298,45 @@ form h2{
 .submit-btn:hover{
     background-color: black;
     color: white;
+    
 }
+/* 6th section match  */
 
-
-
-
+#sixth-section{
+    width: 100%;
+    background-color: #0f4272;
+    color: white;
+    padding: 30px 0;
+}
+.first-match{
+    line-height: 1.5;
+    letter-spacing: .1em;
+}
+.match-parent{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.match-single-container{
+    border: 3px solid #858ce2;
+    padding: 15px;
+}
+.match-single-container h3{
+    text-transform: uppercase;
+}
+.match-single-container i{
+    font-size: 40px;
+    padding: 0 20px 10px 5px;
+}
+.match-single-container p{
+    color: #aeaeae;
+    padding-top: 7px;
+}
+.match-single-container:nth-child(2){
+    border: 3px solid white;
+}
 
 
 
@@ -508,6 +542,40 @@ form h2{
         padding: 8px 12px;
         font-size: 12px;
     }
+    /* 6th section match */
+    #sixth-section{
+        padding: 15px 0;
+    }
+    .first-match{
+        font-size: 15px;
+        text-align: center;
+    }
+    .match-parent{
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    .match-single-container{
+        border: 2px solid rgb(133, 140, 226);
+        margin: 15px 0;
+        padding: 15px;
+    }
+    .match-single-container h3{
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    .match-single-container i{
+        font-size: 30px;
+        padding: 0 10px 0 5px;
+    }
+    .match-single-container p{
+        padding-top: 5px;
+    }
+    .match-single-container:nth-child(2){
+        border: 3px solid white;
+        border: 2px solid white;
+    }
+    
     
 }
 
@@ -543,6 +611,18 @@ form h2{
         padding: 8px 20px;
         border-radius: 10px;
     }
+    /* 6th section match  */
+    .first-match{
+        line-height: 1.5;
+        letter-spacing: .1em;
+    }
+    .match-parent{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+        
+        
 }
 
 
